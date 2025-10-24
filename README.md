@@ -86,7 +86,7 @@ It demonstrates **front-end design**, **interactive mapping**, and **form valida
 
 **Sagar Vishwakarma**  
 💼 College Student | 💻 Web Developer | 🎨 UI Designer  
-📧 [YourEmail@example.com](vishwakarmasagar8471@gmail.com)  
+📧 [vishwakarmasagar@gmail.com](vishwakarmasagar8471@gmail.com)  
 🌐 [Your Portfolio Link](#)  
 📍 India  
 
