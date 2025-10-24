@@ -1,0 +1,144 @@
+/* ===== FOOD BOOKING SECTION ===== */
+.booking-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff5f5;
+}
+
+.booking-section h2 {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+.booking-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.food-item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+  transform: translateY(-5px);
+}
+
+.food-item img {
+  width: 100%;
+  border-radius: 12px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.food-item h3 {
+  margin: 10px 0 5px;
+}
+
+.food-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  display: block;
+  margin: 10px 0;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.book-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #d93636;
+}
+
+/* ===== BOOKING POPUP ===== */
+.booking-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.booking-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  position: relative;
+  animation: popUp 0.3s ease;
+}
+
+.booking-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.booking-card input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+#confirmOrder {
+  background: #25D366;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#confirmOrder:hover {
+  background: #1ebc5b;
+}
+
+@keyframes popUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
