@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Zomato</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>My Profile 🍽️</h2>
+
+    <div id="profileDetails"></div>
+
+    <button id="logoutBtn">Logout</button>
+    <br><br>
+    <div class="BtH">
+    <a href="index.html">⬅️ Back to Home </a>
+    </div>
+  </div>
+
+  <script>
+    // Fetch user info from localStorage
+    const user = JSON.parse(localStorage.getItem("zomatoUser"));
+    const profileDiv = document.getElementById("profileDetails");
+
+    if (user) {
+      profileDiv.innerHTML = `
+        <p><strong>👤 Name:</strong> ${user.name}</p>
+        <p><strong>📧 Email:</strong> ${user.email}</p>
+        <p><strong>📱 Phone:</strong> ${user.phone}</p>
+      `;
+    } else {
+      profileDiv.innerHTML = "<p>No user found. Please login first.</p>";
+    }
+
+    // Logout function
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("zomatoUser");
+      alert("🚪 Logged out successfully!");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

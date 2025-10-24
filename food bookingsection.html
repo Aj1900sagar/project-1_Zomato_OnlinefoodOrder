@@ -1,0 +1,57 @@
+<!-- ===== FOOD BOOKING SECTION ===== -->
+<section class="booking-section">
+  <h2>🍕 Order Your Favorite Meal</h2>
+  <p>Select any restaurant and customize your order.</p>
+
+  <div class="booking-container">
+    <div class="food-item">
+      <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=k60TjxKIOIxJpd4F4yLMVjsniB4W1BpEV4Mi_nb4uJU=" alt="Pizza">
+      <h3>Domino’s Pizza</h3>
+      <p>Cheese Burst Pizza + Garlic Bread + Coke</p>
+      <span class="price">₹499</span>
+      <button class="book-btn" data-item="Domino’s Pizza" data-price="499" data-time="30 min">🍕 Order Now</button>
+    </div>
+
+    <div class="food-item">
+      <img src="https://media.istockphoto.com/id/1498243668/photo/tasty-cheeseburger-with-lettuce-cheddar-cheese-tomato-and-pickles-burger-bun-with-sesame.jpg?s=1024x1024&w=is&k=20&c=HQpNZF02_IhhTDQ_TBpZW6LWmDbk2PvN6M5_R55FwRY=" alt="Burger King">
+      <h3>Burger King</h3>
+      <p>Whopper Burger + Fries + Pepsi</p>
+      <span class="price">₹299</span>
+      <button class="book-btn" data-item="Burger King" data-price="299" data-time="25 min">🍔 Order Now</button>
+    </div>
+
+    <div class="food-item">
+      <img src="https://3.imimg.com/data3/EG/TD/MY-11162625/chicken-biryani-500x500.jpg" alt="Biryani">
+      <h3>Biryani Blues</h3>
+      <p>Hyderabadi Biryani + Raita + Gulab Jamun</p>
+      <span class="price">₹349</span>
+      <button class="book-btn" data-item="Biryani Blues" data-price="349" data-time="40 min">🍛 Order Now</button>
+    </div>
+
+    <div class="food-item">
+      <img src="https://b.zmtcdn.com/data/dish_photos/3fb/65b2d20dc86cff345c9c6c848d8b93fb.jpeg" alt="Rolls">
+      <h3>Behrouz Rolls</h3>
+      <p>Paneer Kathi Roll + Cold Drink</p>
+      <span class="price">₹199</span>
+      <button class="book-btn" data-item="Behrouz Rolls" data-price="199" data-time="35 min">🌯 Order Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKING POPUP ===== -->
+<div class="booking-popup" id="bookingPopup">
+  <div class="booking-card">
+    <span class="close-btn" id="closePopup">×</span>
+    <h2 id="foodTitle">Food Item</h2>
+    <img id="foodImg" src="" alt="Food Image">
+    <p><b>Estimated Delivery:</b> <span id="foodTime"></span></p>
+    <p><b>Price per item:</b> ₹<span id="foodPrice"></span></p>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1" />
+
+    <h3>Total: ₹<span id="totalPrice"></span></h3>
+    <button id="confirmOrder">✅ Confirm Order</button>
+  </div>
+</div>
+
