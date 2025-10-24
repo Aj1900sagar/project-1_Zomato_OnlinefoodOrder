@@ -1,4 +1,4 @@
-# 🍽️ Zomoto – Food Delivery & Investor Relations (Demo Clone)
+># 🍽️ Zomoto – Food Delivery & Investor Relations (Demo Clone)
 
 ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
@@ -7,6 +7,9 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 A responsive and interactive **Zomato-inspired web clone** built using **HTML, CSS, and JavaScript** — featuring an **Investor Relations form** and a **Live Restaurant Map with real-time delivery tracking** using **Leaflet.js** (no API key required).
+---
+
+![Author - Zomato clone ](https://i.postimg.cc/Dz8QxDxN/Chat-GPT-Image-Oct-24-2025-09-11-48-AM.png)
 
 ---
 
